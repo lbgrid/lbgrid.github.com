@@ -1,30 +1,76 @@
+
+<!-- 
+Background music provided by youtube.com.
+    Name: NewLand.mp3
+    Author:Albis
+    Link: https://www.youtube.com/audiolibrary/music
+-->
+<head><title>Aaron Norris</title></head>
+<center><a class="title">aaron norris</a></center>
+<div id="icons">
+<img src="http://www.ppplastic.eu/lariocasa/images/email_lariocasa.png" class="connects email" onclick="window.open('mailto:norrismansion@gmail.com?ubject=hello');" label="email" />
+<img src="http://findicons.com/files/icons/2052/social_network/32/twitter.png" onclick="window.open('http://twiends.com/_aaronnorris');" class="connects twitter" />
+<img src="https://cdn2.iconfinder.com/data/icons/micon-social-pack/512/facebook-128.png" class="connects fb" onclick="window.open('https://www.facebook.com/aaronnorris0/');" />
+<img src="http://vignette2.wikia.nocookie.net/darianibelle/images/4/40/480px-Instagram-logo.png/revision/latest?cb=20141229164418" class="connects instagram" onclick="window.open('https://www.instagram.com/aaronnorris6688/');" />
+
+<img src="http://icons.iconarchive.com/icons/pelfusion/long-shadow-ios7/1024/Phone-icon.png" class="connects phone" onclick="window.open('https://hangouts.google.com/hangouts/_/fimghalaarcspmyg5sbtulrxbye');" /><br/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/2000px-Youtube_icon.svg.png" class="connects yt" onclick="window.open('https://www.youtube.com/channel/UCisifimjsyC19t-3CzE2xOw');"/>
+<img src="http://www.fparchitects.co.uk/about/icon/black%20google+ W.png" class="connects google" onclick="window.open('https://plus.google.com/101203137562286775117');"/>
+<img src="https://www.uwosh.edu/titanapps/googletalk.png/image" class="connects gtalk" />
+<img src="https://mycastingfile.com/assets/img/icons/touch-icon-highres.png" class="connects mycastingfile" />
+<img src="https://openclipart.org/image/2400px/svg_to_png/235441/minimal-speaker-icon.png" class="connects musiccontrols" onclick="pause();" />
+</div>
+<hr color=cornflowerblue />
+<audio src="bg.mp3" id=music autoplay=autoplay loop=-1 ></audio>
+
+<div id="nav">
+<a class="nav home">home</a>
+<a class="nav bio">bio</a>
+<a class="nav news">news</a>
+<a class="nav reels">reels</a>
+<a class="nav photos">photos</a>
+</div><hr color=black />
+
+<div id="dynamic"><center></center></div>
+
+<div id="footer">
+<center><a class="">copyright &copy 
+<script>year=new Date().getFullYear();document.write(year);</script>
+ aaron norris. all rights reserved &reg;</a></center></div>
+
+<script>
+audio = document.getElementsByTagName('audio')[0];
+audio.volume=.5;
+
+function pause(){
+    if(!audio.paused){audio.pause();}else{audio.play();}
+}
+
+
+</script>
+
 <style>
-*{-webkit-user-select:none;user-select:none;-moz-user-select:none;cursor:default;}
-html,body{width:100%;height:100%;padding:0;margin:0;}
-html{overflow:hidden;}
-body{background:url(http://images.coolestwallpapers.com/user-content/uploads/wall/2048x1152/3/e9023c1d2ef4e7dd998e998e7690e0e7ab3bb7dd.jpg) 100% 100%;height:1000%;}
-#sidebar{background:yellow;width:100%;}
-.sitetitle{font-weight:bold;text-decoration:none;font-size:280%;color:#000;text-shadow:2px 1.3px 5px #fff;}
-.sitetitle:hover{color:black;}
-#top{width:100%;position:fixed;top:0;left:0;background:cornflowerblue;}
-.topmenuspan{background:transparent;position:absolute;top:0;right:2;padding:0 1%;width:80%;text-align:right;line-height:1;font-size:110%;}
-.topmenuspan a{color:#666;font-weight:bold;padding-right:1%;text-decoration:none;border:1px solid;border-radius:5%;text-shadow:2px 1.3px 5px #fff;}
-.topmenuspan a:hover{color:#000;}
+*{
+user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+-webkit-user-select:none;
+}
+html,body{width:100%;height:100%;padding:0;margin:0;overflow:hidden;
+background:-webkit-linear-gradient(top,black,lightblue,lightskyblue);
+background-color:black;
+color:lightyellow;
+}
+.title,#icons,hr,#footer{display:;}
+.title{font-weight:bold;font-size:350%;letter-spacing:1em;text-shadow:-1px 1px 25px cornflowerblue;cursor:default;}
+#icons{position:fixed;top:1%;left:.5%;cursor:default;}
+#icons .musiccontrols{position:fixed;right:4;}
+#icons img{width:24px;height:24px;border:3px solid transparent;border-radius:50%;}
+#icons img:hover{box-shadow:1px -1px 10px lightblue;border:3px solid lightskyblue;}
+
+#footer{position:fixed;bottom:0;right:0;}
+#footer a{color:#002;font-weight:bold;font-size:80%;text-shadow:-1px 1px 25px #000;padding-right:20;cursor:default;}
+#nav{width:100%;font-size:185%;font-weight:bold;text-align:center;}
+#nav a{padding:0 5%;cursor:default;box-shadow:1px -1px 10px lightblue;border-radius:4;}
+#nav a:hover{box-shadow:1px -1px 30px lightblue;background:lightskyblue;color:black;text-shadow:1px 1px 30px blue;border:;}
 </style>
-
-<div id=top>
-<div id=sitetitle><a class=sitetitle>Team LifeShift</a></div>
-<menu class=topmenuspan>
-<a href="#hm" accesskey=1 title=homepage>Home</a>
-<a href="#ab" accesskey=a title="about us">About</a>
-<a href="#qs" accesskey=q title="quick start">Quick Start</a>
-<a href="#rs" accesskey=r title="affiliate resources">Resources</a>
-<a href="#tr" accesskey=t title="training pages">Training</a>
-<a href="#hp" accesskey=? title="help center">Help</a>
-<a href="#ct" accesskey=c title="get in touch">Contact Us</a>
-</menu>
-</div>
-
-<div id=sidebar>
-<a></a>
-</div>
