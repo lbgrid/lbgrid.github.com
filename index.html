@@ -718,13 +718,13 @@ material="shader: flat; side: double; transparent: true; src: url(images/path.pn
 <a-entity static-body geometry="primitive:cone;radius-top:0;radius-bottom:2;height:4.5" material="src:url(wrap1.png);shader: flat; side: double; transparent: true;color:transparent; repeat:8 1;" position="0 2 0" scale="1.05 1.05 1.05">
 <a-animation attribute="rotation" to="0 359 0" easing="linear" repeat="indefinite" dur="144000"></a-animation>
 </a-entity>
-<a-entity static-body geometry="primitive:box;" position="1.3 0 2" scale=".7525 .7525 .7525" material="src:url(./xmas3.jpg)"></a-entity>
-<a-entity static-body geometry="primitive:box;" position="3 0 1.2" scale=".7525 .7525 .7525" material="src:url(./xmas3.jpg)"></a-entity>
-<a-entity static-body geometry="primitive:box;" position="2.3 0 2.52" scale=".7525 .7525 .7525" material="src:url(./xmas3.jpg)"></a-entity>
-<a-entity static-body geometry="primitive:box;height:3;width:5;depth:.02;" position="-11.925 1.5 -6" rotation="0 90 0" material="src:url(images/mxmas.jpg);color:red;"></a-entity>
+<a-entity static-body geometry="primitive:box;" position="1.3 0 2" scale=".7525 .7525 .7525" material="src:url(xmas3.jpg)"></a-entity>
+<a-entity static-body geometry="primitive:box;" position="3 0 1.2" scale=".7525 .7525 .7525" material="src:url(xmas3.jpg)"></a-entity>
+<a-entity static-body geometry="primitive:box;" position="2.3 0 2.52" scale=".7525 .7525 .7525" material="src:url(xmas3.jpg)"></a-entity>
+<a-entity static-body geometry="primitive:box;height:3;width:5;depth:.02;" position="-11.925 1.5 -6" rotation="0 90 0" material="src:url(mxmas.jpg);color:red;"></a-entity>
 </a-entity>
 <!-- Grass -->
-<a-entity static-body="" geometry="primitive: plane; height: 400; width: 400" position="0 -0.2 0" rotation="-90 0 0" material="shader: flat; src: url(./grass.jpg); repeat: 200 200"></a-entity>
+<a-entity static-body="" geometry="primitive: plane; height: 400; width: 400" position="0 -0.2 0" rotation="-90 0 0" material="shader: flat; src: url(grass.jpg); repeat: 200 200"></a-entity>
 <a-entity id="restart" static-body="" geometry="primitive: plane; height: 400; width: 400" position="0 -15 0" rotation="-90 0 0" material="shader: flat; color: green;opacity:0;"></a-entity>
 <!-- Camera -->
  <a-entity id="camera" camera="active:true;fov:70;user-height:3;" universal-controls="" kinematic-body="" jump-ability="enableDoubleJump: true; distance: 3;" position="0 2.3 5" velocity="0 0 0" gamepad-controls="" keyboard-controls="" user-height="3" touch-controls="" hmd-controls="" mouse-controls="">
@@ -734,7 +734,7 @@ material="shader: flat; side: double; transparent: true; src: url(images/path.pn
  </a-entity>
 <!-- Lighting and background -->
 
- <a-sky src="./sky.jpg" radius="1024" material="opacity:1;color:#FFF;shader:flat;src:url(images/sky.jpg)" geometry="primitive:sphere;radius:1024;segmentsWidth:64;segmentsHeight:64" scale="-1 1 1">
+ <a-sky src="sky.jpg" radius="1024" material="opacity:1;color:#FFF;shader:flat;src:url(sky.jpg)" geometry="primitive:sphere;radius:1024;segmentsWidth:64;segmentsHeight:64" scale="-1 1 1">
 <a-animation attribute="rotation" to="0 359 0" easing="linear" repeat="indefinite" dur="1444000"></a-animation>
 </a-sky>
 
