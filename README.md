@@ -1,2 +1,1 @@
-# lbgrid.github.com
-# lbgrid.github.com
+# Welcome to Littlebird!
