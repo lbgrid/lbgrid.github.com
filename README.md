@@ -28,3 +28,5 @@ Littlebird Grid is a virtual world built on the frameworks provided by the @Open
 * alter sky, sun, moon, stars, windlight settings
 * more...
 
+### Useful Resources
+* AVSitter(https://github.com/AVsitter/AVsitter/releases)
