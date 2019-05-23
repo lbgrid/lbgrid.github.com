@@ -30,3 +30,4 @@ Littlebird Grid is a virtual world built on the frameworks provided by the @Open
 
 ### Useful Resources
 * AVSitter(https://github.com/AVsitter/AVsitter/releases)
+* TheHypergates[archived!](http://web.archive.org/web/20150426024901/http://thehypergates.com/)
